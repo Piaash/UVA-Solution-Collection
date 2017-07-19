@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+      int i;
+      for(i=0;i<101;i++)
+{
+      if(i%2==0)
+{
+      continue;
+}
+      printf("%d ",i); 
+}           
+      getch();
+}

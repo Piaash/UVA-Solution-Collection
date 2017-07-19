@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1413633726 source:c:\users\asus\desktop\program practise\debug\main.cpp
+	<stdio.h>
+	<math.h>
+	<vector>
+	<algorithm>
+

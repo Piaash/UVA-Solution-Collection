@@ -1,0 +1,42 @@
+#include<stdio.h>
+main()
+{
+    int t,i,a[10],c,j;
+    scanf("%d",&t);
+    printf("Lumberjacks:\n");
+    for(i=0;i<t;i++)
+    {
+        c=0;
+        for(j=0;j<10;j++)
+        {
+            scanf("%d",&a[j]);
+        }
+        if(a[0]<a[1])
+        {
+        for(j=1;j<=8;j++)
+        {
+            if(a[j]>a[j+1])
+            {
+                c=1;
+                break;
+            }
+        }
+        }
+        else
+        {
+        for(j=1;j<=8;j++)
+        {
+            if(a[j]<a[j+1])
+            {
+                c=1;
+                break;
+            }
+        }
+        }
+        if(c==1)
+        printf("Unordered\n");
+        else
+        printf("Ordered\n");
+    }
+    return 0;
+}
